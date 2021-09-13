@@ -180,7 +180,7 @@ export default function SummonerAdventureCard({ summoner }: SummonerCardProps): 
                         <span className="my-2">Adventure:</span>
                         {state.nextAdventure * 1000 < Date.now() ? (
                             <button
-                                className="bg-custom-green p-1 text-xs rounded-md border-2 border-white"
+                                className="can-adventure bg-custom-green p-1 text-xs rounded-md border-2 border-white"
                                 onClick={async () => await adventure(summoner.id)}
                             >
                                 Adventure!

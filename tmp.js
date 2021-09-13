@@ -1,1 +1,0 @@
-for (item of document.querySelectorAll("button.can-adventure")) { item.click()}
