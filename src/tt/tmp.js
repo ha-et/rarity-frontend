@@ -5,7 +5,7 @@ for (item of document.querySelectorAll("button.can-adventure")) {
 
 function zhubi(times){
     for (let i = 0; i < times; i++) {
-        for (let item of document.querySelectorAll("button.mx-auto.mx-auto")) {
+        for (let item of document.querySelectorAll("button.zhubi")) {
             item.click()
         }
     }

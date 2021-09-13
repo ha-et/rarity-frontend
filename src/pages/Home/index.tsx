@@ -42,7 +42,7 @@ export default function Home(): JSX.Element | null {
                     </button>
                     {Object.keys(CLASSES).map((k) => {
                         return (
-                            <button key={k} className="m-4 mx-auto" onClick={() => rarity.mint(k)}>
+                            <button key={k} className="m-4 mx-auto zhubi" onClick={() => rarity.mint(k)}>
                                 <div
                                     className="bg-custom-green mb-4 border-8 border-custom-border"
                                     style={{ height: '140px', width: '140px' }}
