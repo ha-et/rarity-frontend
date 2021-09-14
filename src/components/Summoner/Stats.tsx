@@ -239,7 +239,7 @@ export default function SummonerStatsCard({ summoner }: SummonerStatsCardProps):
                         </span>
                         {parseInt(state.actual) >= parseInt(state.nextLvl) ? (
                             <button
-                                className="bg-custom-green border-2 rounded-md text-xs p-1"
+                                className="bg-custom-green border-2 rounded-md text-xs p-1 level-up"
                                 onClick={async () => {
                                     await level_up(summoner.id)
                                 }}
@@ -262,7 +262,7 @@ export default function SummonerStatsCard({ summoner }: SummonerStatsCardProps):
                             <span>{gold.balance.toFixed(4)}</span>
                             {gold.canClaim > 0 ? (
                                 <button
-                                    className="ml-4 bg-custom-green p-1 text-xs rounded-md border-2 border-white"
+                                    className="ml-4 bg-custom-green p-1 text-xs rounded-md border-2 border-white claim"
                                     onClick={async () => {
                                         await claim(summoner.id)
                                     }}
